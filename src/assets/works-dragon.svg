@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 520" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<title>Continuous interlaced dragon</title>
+<g id="dragon-body"><path d="M-35 395 C110 470 335 425 256 300 C172 165 316 40 458 103 C600 166 491 363 675 397 C858 431 988 277 856 170" stroke-width="38" stroke="var(--color-paper, #e4e3d3)"/><path d="M-35 395 C110 470 335 425 256 300 C172 165 316 40 458 103 C600 166 491 363 675 397 C858 431 988 277 856 170" stroke-width="40"/><path d="M-35 395 C110 470 335 425 256 300 C172 165 316 40 458 103 C600 166 491 363 675 397 C858 431 988 277 856 170" stroke-width="35" stroke="var(--color-paper, #e4e3d3)"/></g>
+<g id="dragon-scales" stroke-width="1.2">
+<path transform="translate(-18.37 402.93) rotate(23.70)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(-1.19 409.87) rotate(20.28)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(16.43 415.81) rotate(17.05)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(34.35 420.78) rotate(13.97)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(52.47 424.79) rotate(11.01)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(70.65 427.86) rotate(8.11)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(88.78 429.98) rotate(5.25)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(106.73 431.18) rotate(2.39)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(124.39 431.47) rotate(-0.53)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(141.62 430.86) rotate(-3.55)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(158.32 429.36) rotate(-6.73)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(174.36 427.00) rotate(-10.14)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(192.07 423.14) rotate(-14.51)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(208.52 418.14) rotate(-19.47)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(223.52 412.01) rotate(-25.22)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(238.64 403.64) rotate(-33.08)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(251.32 393.85) rotate(-42.70)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(262.32 381.18) rotate(-55.99)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(269.45 366.78) rotate(-71.59)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(272.33 350.72) rotate(-87.97)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(270.52 333.01) rotate(-103.03)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(264.66 315.94) rotate(-114.26)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(256.00 300.00) rotate(-121.61)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(247.50 284.86) rotate(-116.64)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(240.85 269.87) rotate(-111.09)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(235.34 252.63) rotate(-104.27)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(232.12 235.74) rotate(-97.17)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(231.10 219.31) rotate(-89.88)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(232.47 201.18) rotate(-81.46)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(236.37 183.90) rotate(-73.10)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(242.64 167.57) rotate(-64.93)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(251.09 152.35) rotate(-57.01)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(261.57 138.37) rotate(-49.38)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(273.89 125.75) rotate(-42.04)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(287.88 114.64) rotate(-34.94)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(303.37 105.16) rotate(-28.03)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(318.03 98.31) rotate(-22.10)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(333.58 92.90) rotate(-16.25)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(349.92 89.03) rotate(-10.44)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(366.93 86.78) rotate(-4.65)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(384.50 86.24) rotate(1.12)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(402.50 87.51) rotate(6.88)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(420.83 90.66) rotate(12.62)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(436.71 94.94) rotate(17.50)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(452.67 100.73) rotate(22.33)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(468.19 107.97) rotate(28.17)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(483.91 117.80) rotate(36.02)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(497.17 128.93) rotate(44.05)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(508.25 141.21) rotate(51.79)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(517.43 154.50) rotate(58.82)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(524.98 168.65) rotate(64.85)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(531.16 183.51) rotate(69.73)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(536.26 198.92) rotate(73.45)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(540.55 214.74) rotate(76.04)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(544.29 230.83) rotate(77.55)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(547.77 247.02) rotate(78.02)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(551.26 263.17) rotate(77.45)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(555.03 279.14) rotate(75.82)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(559.35 294.77) rotate(73.08)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(565.31 312.03) rotate(68.50)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(572.77 328.43) rotate(62.33)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(582.12 343.75) rotate(54.64)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(593.77 357.77) rotate(45.76)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(606.18 368.79) rotate(37.49)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(620.93 378.49) rotate(29.30)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(635.66 385.64) rotate(22.69)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(652.49 391.63) rotate(16.66)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(668.24 395.65) rotate(12.14)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(685.24 398.72) rotate(8.50)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(702.03 400.72) rotate(5.09)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(718.44 401.69) rotate(1.66)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(734.45 401.67) rotate(-1.81)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(753.07 400.40) rotate(-6.01)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(770.97 397.85) rotate(-10.27)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(788.09 394.07) rotate(-14.60)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(804.38 389.16) rotate(-19.01)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(819.75 383.18) rotate(-23.53)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(836.44 374.96) rotate(-28.97)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(851.70 365.51) rotate(-34.65)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(865.42 354.94) rotate(-40.63)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(877.50 343.38) rotate(-46.97)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(887.83 330.94) rotate(-53.73)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(897.36 315.81) rotate(-62.04)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(904.31 299.85) rotate(-71.01)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(908.53 283.26) rotate(-80.58)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(909.85 266.21) rotate(-90.58)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(908.13 248.87) rotate(-100.73)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(903.20 231.41) rotate(-110.68)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(896.13 216.19) rotate(-118.96)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(886.39 201.14) rotate(-126.68)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(875.83 188.46) rotate(-132.77)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+<path transform="translate(863.15 176.07) rotate(-138.36)" d="M-5-15 Q5-9-5-3 Q5 3-5 9 Q3 14-4 17 M-11-9 Q-2-3-11 3 Q-2 9-11 15"/>
+</g>
+<g id="dragon-dorsal-fin" stroke-width="1.8">
+<path transform="translate(16.43 415.81) rotate(17.06)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(88.78 429.98) rotate(5.25)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(158.32 429.36) rotate(-6.73)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(217.28 414.78) rotate(-22.64)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(257.88 387.02) rotate(-49.77)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(272.34 346.92) rotate(-91.50)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(252.96 294.94) rotate(-120.18)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(232.12 235.74) rotate(-97.17)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(237.03 181.80) rotate(-72.07)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(263.01 136.71) rotate(-48.45)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(305.41 104.09) rotate(-27.18)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(359.57 87.54) rotate(-7.13)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(420.83 90.66) rotate(12.62)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(481.82 116.31) rotate(34.87)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(519.74 158.47) rotate(60.64)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(539.39 210.19) rotate(75.40)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(551.77 265.47) rotate(77.27)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(567.91 318.29) rotate(66.36)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(598.82 362.64) rotate(42.23)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(655.51 392.50) rotate(15.71)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(734.45 401.67) rotate(-1.81)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(804.38 389.16) rotate(-19.01)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(859.74 359.60) rotate(-38.03)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(896.31 317.75) rotate(-60.97)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(909.85 268.36) rotate(-89.32)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+<path transform="translate(896.13 216.19) rotate(-118.96)" d="M-7-20 Q-1-24 7-34 L4-20"/>
+</g>
+<g id="dragon-limbs" fill="var(--color-paper, #e4e3d3)">
+<path d="M350 90 Q335 63 303 58 L283 39 L270 42 L286 60 L307 72 L322 105 M283 39 L275 25 M276 43 L263 32 M286 46 L291 31"/>
+<path d="M491 163 Q527 152 545 128 L568 123 L575 110 L558 111 L533 119 L513 137 L482 144 M569 123 L583 122 M573 116 L585 108"/>
+<path d="M702 398 Q713 434 748 441 L768 462 L781 460 L766 442 L738 428 L731 398 M768 462 L770 474 M775 457 L790 468 M765 447 L784 446"/>
+<path d="M907 293 Q943 304 951 328 L974 340 L985 334 L972 327 L966 300 L933 275 M974 340 L982 352 M981 335 L996 343 M976 327 L991 326"/>
+</g>
+<g id="dragon-head" transform="translate(853 164) rotate(-28)" fill="var(--color-paper, #e4e3d3)">
+<path id="dragon-mane" d="M23 20 L43 13 L34 0 L51-12 L32-16 L40-36 L20-31 L16-51 L4-39 L-9-54 L-15-36 L-34-42 L-29-22 L-43-25 L-34-6 L-42 5 L-25 17"/>
+<path id="dragon-horns" d="M-17-28 Q-30-56-15-77 Q-16-55-4-47 L2-29 M13-29 Q10-60 29-71 Q18-49 27-34"/>
+<path id="dragon-face" d="M-23 15 Q-35 4-31-14 L-20-33 L-6-27 L7-32 L22-22 L24-6 L13 8 L10 24 Q-5 34-22 26 L-37 27 L-43 18 L-37 9 Z"/>
+<path d="M-27-13 L-15-18 L-7-12 M5-15 L15-19 L20-12 M-38 18 Q-20 13-9 22 L7 17 M-19 27 L-14 36 L-8 27 M-32 12 L-29 18 M-4-3 Q-12 6-22 5"/>
+<path d="M-20-12 L-14-11 M8-12 L13-13" stroke-width="4"/>
+<path id="dragon-whiskers" d="M-32 10 C-71-12-97 7-96 27 C-95 41-74 38-79 28 M-22 24 C-60 53-87 36-107 55 M13 10 C46 5 67 26 59 42 C53 53 42 48 46 40" fill="none"/>
+<path id="dragon-beard" d="M-17 30 Q-36 48-26 65 Q-22 48-6 41 Q0 57 13 58 Q4 44 5 28"/>
+</g>
+</svg>

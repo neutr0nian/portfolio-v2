@@ -1,0 +1,53 @@
+{
+  "captured_date": "2026-10-26",
+  "timezone": "America/Los_Angeles",
+  "url": "http://127.0.0.1:5173/",
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "files": [
+    {
+      "file": "01-landing.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 46613,
+      "sha256": "b076a08d9048f451a17c29c15c9e864e470abb5451b50379db5667edb8d1b3d8"
+    },
+    {
+      "file": "02-journey-artwork.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 29207,
+      "sha256": "105c3423ddd11342dbc27ce0af247e82cf41917756089228c528c538e2240c5a"
+    },
+    {
+      "file": "03-journey-open.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 53482,
+      "sha256": "63aa1f25f829a4fc63e7174622a5456ec29a08541cb670332dcd3cc57a799316"
+    },
+    {
+      "file": "04-journey-open-bottom.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 49026,
+      "sha256": "78b4d2583923208ec1912d8b8130668c71e7c70f2e487eb7ac36493b0fbef35d"
+    },
+    {
+      "file": "05-works.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 26087,
+      "sha256": "47da18add9815c749d5711991f4e001cfd1f64f1c2ecd58965e2e25c0e4465e9"
+    },
+    {
+      "file": "06-works-expanded.jpg",
+      "width": 1280,
+      "height": 720,
+      "bytes": 28563,
+      "sha256": "69f88ccb49cb9966a19320d05378269eb812cfb9ab56777bc9d0cc8a4ae1cae9"
+    }
+  ]
+}

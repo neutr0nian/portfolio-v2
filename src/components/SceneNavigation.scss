@@ -1,0 +1,29 @@
+.scene-navigation {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  height: calc(var(--view-navigation-height) + 16px);
+  padding-inline: var(--layout-margin);
+  padding-top: 16px;
+  background: var(--color-background);
+}
+
+.scene-navigation__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.scene-navigation__link svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }

@@ -1,0 +1,276 @@
+$breakpoint-small-phone: 359px;
+$breakpoint-mobile: 360px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+$breakpoint-large-desktop: 1440px;
+
+:root {
+  /* Primitive palette */
+  --color-vermilion: #bf1931;
+  --color-indigo: #406e8e;
+  --color-jade: #08a045;
+  --color-paper: #e4e3d3;
+  --color-ink: #191919;
+
+  /* Semantic color roles */
+  --color-background: var(--color-paper);
+  --color-surface: #ffffff;
+  --color-text: var(--color-ink);
+  --color-text-muted: #5e5e5e;
+  --color-border: rgb(25 25 25 / 18%);
+  --color-accent-primary: var(--color-vermilion);
+  --color-accent-primary-hover: color-mix(in srgb, var(--color-vermilion) 85%, var(--color-ink));
+  --color-accent-secondary: var(--color-indigo);
+  --color-accent-tertiary: var(--color-jade);
+  --color-focus: var(--color-indigo);
+  --color-lotus: #47734b;
+
+  --color-on-accent: #ffffff;
+
+  /* Social controls */
+  --color-social-accent: var(--color-text-muted);
+  --color-social-accent-hover: var(--color-vermilion);
+  --social-button-size: 56px;
+
+  /* Typography */
+  --font-display: 'Belanosima', sans-serif;
+  --font-body: 'Abhaya Libre', Georgia, serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-body: 16px;
+  --font-size-md: clamp(18px, 16.8px + 0.35vw, 22px);
+  --font-size-lg: clamp(24px, 20px + 1.1vw, 36px);
+  --font-size-xl: clamp(36px, 28px + 2.4vw, 64px);
+  --font-size-display: clamp(48px, 32px + 5vw, 112px);
+  --line-height-tight: 0.95;
+  --line-height-heading: 1.08;
+  --line-height-body: 1.55;
+  --letter-spacing-tight: -0.56px;
+  --letter-spacing-label: 1.92px;
+
+  /* Mobile-first spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-section: clamp(64px, 48px + 5vw, 128px);
+
+  /* Layout */
+  --breakpoint-small-phone: 359px;
+  --breakpoint-mobile: 360px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+  --breakpoint-large-desktop: 1440px;
+  --container-max: 1280px;
+  --grid-columns: 2;
+  --grid-gutter: 24px;
+  --layout-margin: 24px;
+  --content-image-gap: 48px;
+  --content-stack-gap: 8px;
+  --view-navigation-height: 56px;
+  --view-section-padding: 32px;
+
+  /* Journey section */
+  --font-size-journey-title: 36px;
+  --journey-heading-art-gap: 48px;
+  --journey-art-size: 216px;
+
+  --journey-reveal-delay: 3s;
+  --journey-corner-size: 72px;
+  --journey-corner-inset: 4px;
+  --journey-content-delay: 0.25s;
+  --journey-entry-fade-duration: 0.85s;
+  --journey-entry-stagger: 0.28s;
+  --journey-row-delay: 0.18s;
+  --journey-scroll-height: 760px;
+  --history-panel-padding: 24px;
+  --history-content-max-width: 960px;
+  --history-design-gap: 32px;
+  --history-column-gap: 24px;
+  --history-row-gap: 40px;
+  --history-entry-gap: 4px;
+  --font-size-history-title: 32px;
+  --font-size-history-entry: 18px;
+  --font-size-history-role: 16px;
+  --font-size-history-description: 15px;
+  --color-warli: #bd0000;
+  --color-scroll-surface: var(--color-background);
+  --scroll-paper-shadow: drop-shadow(0 2px 2px rgb(25 25 25 / 12%)) drop-shadow(0 12px 14px rgb(25 25 25 / 14%));
+  --works-scroll-height: 440px;
+  --works-content-offset: 32px;
+  --works-expand-duration: 1000ms;
+  --works-details-delay: calc(var(--works-expand-duration) + 100ms);
+  --works-details-duration: 450ms;
+  --works-lotus-height: 48%;
+  --works-lotus-leaf-deep: color-mix(in srgb, var(--color-lotus) 78%, var(--color-ink));
+  --works-lotus-leaf-soft: color-mix(in srgb, var(--color-lotus) 72%, var(--color-paper));
+  --works-lotus-leaf-edge: color-mix(in srgb, var(--color-lotus) 55%, var(--color-paper));
+  --works-lotus-petal: color-mix(in srgb, var(--color-vermilion) 65%, var(--color-paper));
+  --works-lotus-petal-pale: color-mix(in srgb, var(--color-vermilion) 22%, var(--color-paper));
+  --works-panel-radius: 8px;
+  --works-panel-gap: var(--space-3);
+
+  /* Landing artwork scale: smaller phones */
+
+  --landing-hangings-width: 304px;
+  --landing-hangings-height: 208px;
+  --landing-side-ornament-size: 64px;
+  --landing-center-ornament-size: 72px;
+  --landing-lotus-size: 260px;
+  --landing-content-bottom-space: 120px;
+
+
+
+  /* Shape and depth */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-round: 15984px;
+  --border-thin: 1px;
+  --shadow-soft: 0 16px 48px rgb(25 25 25 / 8%);
+
+  /* Motion */
+  --ornament-entrance-duration: 1.65s;
+  --breeze-period: 3s;
+  --ornament-sway-angle: 1.8deg;
+  --lotus-sway-angle: 0.9deg;
+  --discover-medium-duration: 1.65s;
+  --discover-high-start: 1.8s;
+  --discover-high-duration: 6.4s;
+  --discover-medium-pressure: 1.85;
+  --discover-high-pressure: 6;
+
+  --discover-branch-deflection: 10px;
+  --discover-travel-start: 4.8s;
+  --discover-travel-duration: 1.8s;
+  --landing-stage-gap: 0.25s;
+  --font-size-discover: 18px;
+  --discover-entrance-start: 3s;
+  --discover-entrance-duration: 0.65s;
+  --landing-idle-delay: 0.8s;
+  --discover-ambient-settle-duration: 0.5s;
+
+  --journey-art-entrance-duration: 1.8s;
+  --journey-art-opening-scale: 1.05;
+  --wind-petal-life: 6.5s;
+  --wind-twig-life: 4.8s;
+
+
+  --wind-audio-settle-duration: 2.2s;
+  --duration-fast: 160ms;
+  --duration-base: 320ms;
+  --duration-slow: 700ms;
+  --ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-emphasis: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+
+  /* Interaction */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 3px;
+}
+
+@media (min-width: $breakpoint-mobile) {
+  :root {
+
+    --landing-hangings-width: 340px;
+    --landing-hangings-height: 240px;
+    --landing-side-ornament-size: 72px;
+    --landing-center-ornament-size: 80px;
+    --landing-lotus-size: 320px;
+    --font-size-journey-title: 40px;
+    --journey-art-size: 264px;
+    --journey-corner-size: 88px;
+    --journey-scroll-height: 840px;
+  }
+}
+
+@media (min-width: $breakpoint-tablet) {
+  :root {
+
+
+
+    --view-section-padding: 48px;
+    --grid-columns: 7;
+    --works-scroll-height: 520px;
+    --layout-margin: 48px;
+
+    --landing-hangings-width: 360px;
+    --landing-hangings-height: 304px;
+    --landing-side-ornament-size: 100px;
+    --landing-center-ornament-size: 108px;
+    --landing-lotus-size: 360px;
+    --font-size-journey-title: 48px;
+    --journey-heading-art-gap: 64px;
+    --journey-art-size: 352px;
+
+    --journey-corner-size: 104px;
+    --journey-scroll-height: 500px;
+    --history-panel-padding: 48px;
+  }
+}
+
+@media (min-width: $breakpoint-desktop) {
+  :root {
+    --grid-columns: 12;
+
+    --landing-hangings-width: 380px;
+    --landing-hangings-height: 336px;
+    --landing-side-ornament-size: 104px;
+    --landing-center-ornament-size: 112px;
+    --landing-lotus-size: 420px;
+    --font-size-journey-title: 56px;
+    --journey-heading-art-gap: 72px;
+    --journey-art-size: 420px;
+    --journey-corner-size: 128px;
+    --journey-scroll-height: 480px;
+    --history-panel-padding: 72px;
+    --font-size-history-title: 48px;
+    --font-size-history-entry: 20px;
+    --font-size-history-role: 18px;
+    --font-size-history-description: 16px;
+  }
+}
+
+@media (min-width: $breakpoint-large-desktop) {
+  :root {
+
+    --landing-hangings-width: 400px;
+    --landing-hangings-height: 352px;
+    --landing-side-ornament-size: 117px;
+    --landing-center-ornament-size: 124px;
+    --landing-lotus-size: 467px;
+    --journey-art-size: 480px;
+    --journey-corner-size: 144px;
+    --journey-scroll-height: 520px;
+  }
+}
+
+// Compact-height viewports include laptops at scaled resolutions and landscape
+// tablets. Preserve the type hierarchy while reducing decorative competition.
+@media (min-width: $breakpoint-tablet) and (max-height: 800px) {
+  :root {
+
+    --landing-hangings-width: 320px;
+    --landing-hangings-height: 256px;
+    --landing-side-ornament-size: 80px;
+    --landing-center-ornament-size: 88px;
+    --landing-lotus-size: 300px;
+    --landing-content-bottom-space: 96px;
+  }
+}
+
+@media (max-height: 600px) {
+  :root {
+
+    --landing-hangings-width: 280px;
+    --landing-hangings-height: 192px;
+    --landing-side-ornament-size: 56px;
+    --landing-center-ornament-size: 64px;
+    --landing-lotus-size: 240px;
+    --landing-content-bottom-space: 64px;
+  }
+}

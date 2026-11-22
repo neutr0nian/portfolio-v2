@@ -1,0 +1,48 @@
+body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  line-height: var(--line-height-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+.type-display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: var(--line-height-heading);
+  text-wrap: balance;
+}
+
+h1,
+.type-display {
+  font-size: var(--font-size-display);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+h4 {
+  font-size: var(--font-size-md);
+}
+
+p {
+  max-width: 68ch;
+}
+
+.type-label {
+  font-family: var(--font-display);
+  font-size: var(--font-size-xs);
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing-label);
+  text-transform: uppercase;
+}

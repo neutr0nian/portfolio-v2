@@ -1,0 +1,79 @@
+.scroll-artwork {
+  position: relative;
+  grid-column: 1 / -1;
+  align-self: center;
+  width: 100%;
+  min-height: var(--journey-art-size);
+  overflow-anchor: none;
+}
+
+.scroll-artwork__motif {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: min(100%, var(--journey-art-size), var(--journey-available-art-size, var(--journey-art-size)));
+  margin: 0 auto;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.scroll-artwork__rotator {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.scroll-artwork__rotator svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  will-change: transform, opacity;
+}
+
+.scroll-artwork__rails {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.scroll-artwork__surface {
+  position: absolute;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  isolation: isolate;
+}
+
+.scroll-artwork__paper {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  transform-origin: center;
+  filter: var(--scroll-paper-shadow);
+}
+
+.scroll-artwork__paper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-scroll-surface);
+}
+
+.scroll-artwork__complete {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.scroll-artwork--open .scroll-artwork__motif {
+  visibility: hidden;
+}

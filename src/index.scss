@@ -1,0 +1,42 @@
+@use './styles/tokens';
+@use './styles/reset';
+@use './styles/typography';
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100svh;
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+#root {
+  min-height: 100svh;
+}
+
+::selection {
+  color: var(--color-paper);
+  background: var(--color-accent-primary);
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--color-focus);
+  outline-offset: var(--focus-ring-offset);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

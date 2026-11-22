@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--color-paper); color: var(--color-ink); }
+main { max-width: 1320px; margin: 0 auto; padding: 32px; }
+header { margin-bottom: 24px; }
+h1 { font: 400 32px var(--font-display); margin: 0 0 8px; }
+p { font: 400 18px var(--font-body); margin: 0; }
+.review-screens { display: flex; gap: 12px; }
+.review-screen { position: relative; flex: 1; min-width: 0; height: 560px; overflow: hidden; border: 1px solid rgb(25 25 25 / 18%); }
+.review-number { display: block; text-align: center; padding-top: 24px; font: 400 16px var(--font-body); opacity: 0.55; }
+.review-screen .lotus-garden { position: absolute; bottom: 0; width: 100%; height: var(--works-lotus-height); }
+@media (max-width: 767px) { main { padding: 16px; } .review-screens { flex-wrap: wrap; } .review-screen { flex: 1 0 40%; height: 400px; } }

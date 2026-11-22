@@ -1,0 +1,88 @@
+.button {
+  min-width: 160px;
+  min-height: 48px;
+  padding: 8px 20px;
+  border: 1px solid var(--color-text-muted);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text);
+  font: 400 16px/1 var(--font-body);
+  cursor: pointer;
+  transition: background-color var(--duration-fast) var(--ease-standard),
+    color var(--duration-fast) var(--ease-standard);
+
+
+  &:disabled { cursor: default; }
+
+  &:focus-visible {
+    outline: var(--focus-ring-width) solid var(--color-focus);
+    outline-offset: var(--focus-ring-offset);
+  }
+}
+
+.button--primary {
+  padding: var(--space-3) var(--space-5);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-primary);
+  color: var(--color-on-accent);
+
+  &:is(:hover, :focus-visible):not(:disabled) {
+    background: var(--color-accent-primary-hover);
+  }
+}
+
+.button--text {
+  min-width: 0;
+  padding: 8px 16px;
+  border: 0;
+  border-radius: 0;
+  color: var(--color-text);
+  text-underline-offset: 4px;
+
+  &:is(:hover, :focus-visible):not(:disabled) {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+}
+
+.button {
+  transition: background-color 250ms var(--ease-in-out),
+    color 250ms var(--ease-in-out), border-color 250ms var(--ease-in-out),
+    transform 160ms var(--ease-in-out);
+  &:active:not(:disabled) { transform: scale(0.98); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .button { transition: none; }
+  .button:active:not(:disabled) { transform: none; }
+}
+
+.button--outline {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--color-vermilion);
+    clip-path: circle(0 at var(--ink-x, 50%) var(--ink-y, 0px));
+    transition: clip-path 850ms var(--ease-in-out);
+    pointer-events: none;
+  }
+
+  &:is(:hover, :focus-visible):not(:disabled) {
+    color: white;
+    border-color: var(--color-vermilion);
+  }
+
+  &:is(:hover, :focus-visible):not(:disabled)::before {
+    clip-path: circle(150% at var(--ink-x, 50%) var(--ink-y, 0px));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button--outline::before { transition: none; }
+}

@@ -1,0 +1,36 @@
+.lotus-garden {
+  display: block;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.lotus-garden__stem {
+  fill: none;
+  stroke: var(--color-lotus);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.lotus-garden__leaf {
+  fill: var(--color-lotus);
+  stroke: var(--works-lotus-leaf-edge);
+  stroke-width: 0.9;
+  stroke-linejoin: round;
+}
+
+.lotus-garden__leaf--deep { fill: var(--works-lotus-leaf-deep); }
+.lotus-garden__leaf--soft { fill: var(--works-lotus-leaf-soft); }
+.lotus-garden__fold { fill: var(--works-lotus-leaf-deep); stroke: none; opacity: 0.35; }
+
+.lotus-garden__veins {
+  fill: none;
+  stroke: var(--color-paper);
+  stroke-width: 0.8;
+  opacity: 0.32;
+  stroke-linecap: round;
+}
+
+.lotus-garden__bloom { fill: var(--works-lotus-petal); }
+.lotus-garden__bloom--pale { fill: var(--works-lotus-petal-pale); }
+.lotus-garden__calyx { fill: var(--color-lotus); }
+.lotus-garden__petal-line { fill: none; stroke: var(--color-paper); stroke-width: 1; }

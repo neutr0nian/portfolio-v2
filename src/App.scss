@@ -1,0 +1,247 @@
+@use './styles/tokens' as tokens;
+
+.portfolio {
+  position: fixed;
+  inset: 0;
+  height: 100svh;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.portfolio__track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+}
+
+.portfolio[data-transitioning='true'] .portfolio__track {
+  will-change: transform;
+}
+
+.portfolio__view {
+  flex: 0 0 100%;
+  min-width: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-border) transparent;
+  background: var(--color-background);
+}
+
+.portfolio__view--journey {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.portfolio__view--landing {
+  overflow: hidden;
+  touch-action: pinch-zoom;
+}
+
+.portfolio h1:focus,
+.portfolio h2:focus {
+  outline: none;
+}
+
+.landing {
+  position: relative;
+  isolation: isolate;
+  min-height: 100svh;
+  overflow: hidden;
+  background: var(--color-background);
+}
+
+.landing__art {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.lotus,
+.hanging {
+  position: absolute;
+  display: block;
+  user-select: none;
+}
+
+// Layout and mirroring stay on the wrappers; only the artwork moves.
+.lotus__art,
+.hanging img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hanging img {
+  transform-origin: 50% 0%;
+}
+
+.lotus__art {
+  transform-origin: 0% 45.6%;
+}
+
+.hangings {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: min(100%, var(--landing-hangings-width));
+  height: var(--landing-hangings-height);
+  transform: translateX(-50%);
+}
+
+.hanging--left,
+.hanging--right {
+  top: 0;
+  width: var(--landing-side-ornament-size);
+  height: auto;
+}
+
+.hanging--left {
+  left: 35.2px;
+}
+
+.hanging--right {
+  right: 35.2px;
+  transform: scaleX(-1);
+}
+
+.hanging--center {
+  top: 0;
+  left: 50%;
+  width: var(--landing-center-ornament-size);
+  height: auto;
+  transform: translateX(-50%);
+}
+
+.lotus {
+  width: var(--landing-lotus-size);
+  max-width: none;
+}
+
+.lotus--left {
+  bottom: -288px;
+  left: -128px;
+}
+
+.lotus--right {
+  top: 16%;
+  right: -150px;
+  transform: scaleX(-1);
+}
+
+.landing__content {
+  min-height: 100svh;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  column-gap: var(--grid-gutter);
+  align-content: center;
+  align-items: center;
+  // Reserve the ornament's actual SVG height plus breathing room.
+  padding: calc(var(--landing-center-ornament-size) * 360 / 124 + var(--content-image-gap)) var(--layout-margin) var(--landing-content-bottom-space);
+}
+
+.identity {
+  grid-column: 1 / -1;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--content-stack-gap);
+  text-align: center;
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(32px, 8vw, 40px);
+    line-height: 1.08;
+    font-weight: 600;
+  }
+
+  p {
+    font-family: var(--font-body);
+    font-size: clamp(26px, 6vw, 32px);
+    line-height: 1.12;
+  }
+}
+
+.discover-button {
+  font-size: var(--font-size-discover);
+  align-self: center;
+  margin: var(--space-4) 0 0;
+}
+
+@media (min-width: tokens.$breakpoint-mobile) {
+  .lotus--left {
+    bottom: -230px;
+    left: -100px;
+  }
+
+  .lotus--right {
+    right: -140px;
+  }
+}
+
+@media (min-width: tokens.$breakpoint-tablet) {
+  .hanging--left {
+    left: -18px;
+  }
+
+  .hanging--right {
+    right: 0;
+  }
+
+  .lotus--left {
+    bottom: -192px;
+    left: -48px;
+  }
+
+  .lotus--right {
+    top: 21%;
+    right: -144px;
+  }
+
+  .identity {
+    grid-column: 2 / span 5;
+    h1 {
+      font-size: clamp(40px, 3.2vw, 48px);
+    }
+
+    p {
+      font-size: clamp(32px, 3.2vw, 48px);
+    }
+  }
+}
+
+@media (min-width: tokens.$breakpoint-desktop) {
+  .lotus--left {
+    bottom: auto;
+    top: 58.3%;
+    left: -27px;
+  }
+
+  .lotus--right {
+    top: 22.6%;
+    right: 0;
+  }
+
+  .identity {
+    grid-column: 3 / span 8;
+  }
+}
+
+@media (min-width: tokens.$breakpoint-large-desktop) {
+  .lotus--left {
+    top: 58.3%;
+    left: -27px;
+  }
+
+  .lotus--right {
+    top: 22.6%;
+    right: 0;
+  }
+}

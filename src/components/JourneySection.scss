@@ -1,0 +1,52 @@
+@use '../styles/tokens' as tokens;
+
+.journey-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  padding: var(--view-section-padding) var(--layout-margin);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  gap: var(--space-7);
+  z-index: 1;
+  background: transparent;
+  --journey-available-art-size: max(160px, calc(100svh - var(--view-navigation-height) - var(--space-6) * 2 - var(--space-4) - var(--font-size-journey-title) * var(--line-height-heading) - var(--journey-heading-art-gap) - var(--space-6)));
+}
+
+.journey-section__body {
+  flex: 0 0 auto;
+  min-height: var(--journey-available-art-size);
+  width: min(100%, var(--container-max));
+  margin-inline: auto;
+  padding-bottom: var(--space-6);
+}
+
+.journey-section__grid {
+  width: min(100%, var(--container-max));
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-columns), minmax(0, 1fr));
+  grid-template-rows: auto;
+  column-gap: var(--grid-gutter);
+  margin: 0 auto;
+  align-content: start;
+}
+
+.journey-section__title {
+  flex-shrink: 0;
+  width: min(calc(min(100%, 1240px) - var(--history-panel-padding) * 2), var(--history-content-max-width));
+  margin: 0 auto;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: var(--font-size-journey-title);
+  font-weight: 600;
+  line-height: var(--line-height-heading);
+  text-align: center;
+}
+
+
+@media (min-width: tokens.$breakpoint-tablet) {
+  .journey-section__body { max-width: 1240px; }
+}
