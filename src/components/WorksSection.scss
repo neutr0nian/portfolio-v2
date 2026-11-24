@@ -3,13 +3,14 @@
 .works-section {
   position: relative;
   isolation: isolate;
-  min-height: calc(100svh - var(--view-navigation-height));
+  min-height: calc(100svh - var(--scene-navigation-height));
   padding: var(--view-section-padding) var(--layout-margin);
   background: var(--color-background);
 }
 
 .works-section__inner {
-  max-width: var(--container-max);
+  width: 100%;
+  max-width: var(--section-content-max);
   margin: 0 auto;
 
   h2 {
@@ -17,6 +18,7 @@
     font-size: var(--font-size-journey-title);
     font-weight: 600;
     text-align: center;
+    line-height: var(--line-height-heading);
     margin: 0 0 var(--space-6);
   }
 }
@@ -38,10 +40,10 @@
   position: relative;
   flex: 0 0 144px;
   min-width: 0;
-  height: var(--works-scroll-height);
+  height: max(var(--works-scroll-height), calc(100svh - var(--scene-navigation-height) - var(--view-section-padding) * 2 - var(--font-size-journey-title) * var(--line-height-heading) - var(--space-6) - 40px));
   transition: flex-basis var(--works-expand-duration) var(--ease-in-out),
     flex-grow var(--works-expand-duration) var(--ease-in-out),
-    transform 180ms var(--ease-in-out);
+    transform 350ms var(--ease-in-out);
 
 }
 
@@ -150,10 +152,10 @@
 @keyframes work-details-in { from { opacity: 0; } to { opacity: 1; } }
 
 @media (min-width: tokens.$breakpoint-tablet) {
-  .works-section__inner { max-width: 1120px; }
+
   .works-section__track { overflow-x: visible; }
   .work-scroll { flex: 1 1 0; }
-  .work-scroll__content { padding: 128px 16px 24px; }
+  .work-scroll__content { padding: clamp(80px, 13svh, 180px) 16px 24px; }
   .works-section__track[data-expanded='true'] .work-scroll { flex: 0.8 1 0; }
   .works-section__track[data-expanded='true'] .work-scroll--expanded { flex: 2.6 1 0; }
 }
@@ -240,4 +242,19 @@
 
 @media (prefers-reduced-motion: reduce) {
   .work-scroll__paper::before { transition: none; }
+}
+
+@media (min-width: 600px) and (max-height: 600px) {
+  .works-section { --works-scroll-height: 320px; }
+  .works-section__inner h2 { margin-bottom: 16px; }
+  .work-scroll__content { padding: 24px 12px; height: auto; grid-template-rows: auto auto; gap: 16px; }
+  .work-scroll__summary { min-height: 0; }
+  .work-scroll__details[hidden] { display: none; }
+  .work-scroll__preview { min-height: 64px; }
+  .works-lotus { --works-lotus-height: 40%; }
+}
+
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .work-scroll:hover { transform: translateY(-4px); }
+  .work-scroll:has(.work-scroll__toggle:active) { transform: translateY(-2px) scale(.99); }
 }

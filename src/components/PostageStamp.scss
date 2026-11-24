@@ -1,0 +1,81 @@
+.postage-stamp {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  width: 100%;
+  aspect-ratio: 160 / 208;
+  padding: 17% 20% 18%;
+}
+
+.postage-stamp__frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.postage-stamp__paper {
+  fill: var(--color-background);
+  stroke: color-mix(in srgb, currentColor 55%, var(--color-paper));
+}
+
+.postage-stamp__art {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  svg,
+  img {
+    display: block;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.postage-stamp__label {
+  position: relative;
+  grid-row: 1;
+  grid-column: 1;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0;
+  text-align: right;
+  line-height: 1.2;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.postage-stamp__border {
+  stroke: color-mix(in srgb, currentColor 55%, var(--color-paper));
+}
+
+.postage-stamp__label [lang="hi"] {
+  font-family: "Noto Sans Devanagari", "Kohinoor Devanagari", sans-serif;
+  font-size: 15px;
+}
+
+.postage-stamp__value {
+  position: absolute;
+  left: 20%;
+  bottom: 13%;
+  font-family: var(--font-body);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.social-brand { display: block; }
+.social-brand--linkedin { color: #0a66c2; }
+.social-brand--dribbble { color: #ea4c89; }
+.social-brand--substack { color: #ff6719; }
+

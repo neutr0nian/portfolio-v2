@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: space-between;
   gap: var(--space-4);
-  height: calc(var(--view-navigation-height) + 16px);
+  height: var(--scene-navigation-height);
   padding-inline: var(--layout-margin);
   padding-top: 16px;
   background: var(--color-background);

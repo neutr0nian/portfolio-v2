@@ -73,6 +73,8 @@ $breakpoint-large-desktop: 1440px;
   --content-image-gap: 48px;
   --content-stack-gap: 8px;
   --view-navigation-height: 56px;
+  --scene-navigation-height: calc(var(--view-navigation-height) + 16px);
+  --section-content-max: 1600px;
   --view-section-padding: 32px;
 
   /* Journey section */
@@ -272,5 +274,15 @@ $breakpoint-large-desktop: 1440px;
     --landing-center-ornament-size: 64px;
     --landing-lotus-size: 240px;
     --landing-content-bottom-space: 64px;
+  }
+}
+
+
+// Keep the small-height landscape composition usable without shrinking controls.
+@media (min-width: 600px) and (max-height: 600px) {
+  :root {
+    --view-navigation-height: 48px;
+    --view-section-padding: 20px;
+    --font-size-journey-title: 32px;
   }
 }

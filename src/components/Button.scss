@@ -86,3 +86,26 @@
 @media (prefers-reduced-motion: reduce) {
   .button--outline::before { transition: none; }
 }
+
+// Keep the activated fill latched while the landing button is disabled for travel.
+.discover-button[data-departing='true'] {
+  color: var(--color-on-accent);
+  border-color: var(--color-vermilion);
+
+  &::before {
+    clip-path: circle(150% at var(--ink-x, 50%) var(--ink-y, 0px));
+  }
+}
+
+@keyframes experience-press {
+  0%, 100% { transform: scale(1); }
+  38% { transform: scale(.96); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .discover-button[data-departing='true'] {
+    animation: experience-press 280ms ease-out;
+  }
+}
+
+.discover-button { border-radius: 10px; }

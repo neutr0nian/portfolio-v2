@@ -63,7 +63,8 @@ export default function ScrollArtwork({ history, active }: { history: HistoryEnt
       || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
     const duration = Number.parseFloat(getComputedStyle(container).getPropertyValue('--journey-art-entrance-duration'))
     entranceRef.current = gsap.timeline()
-      .to(rotator, { autoAlpha: 1, scale: 1, duration, ease: 'sine.inOut' })
+      .to(rotator, { autoAlpha: 1, duration: 0.65, ease: 'sine.out' })
+      .to(rotator, { scale: 1, duration, ease: 'sine.inOut' }, 0)
   }, [active, phase])
 
   useEffect(() => () => {

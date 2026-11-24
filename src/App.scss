@@ -175,6 +175,36 @@
   margin: var(--space-4) 0 0;
 }
 
+.identity__greeting {
+  display: grid;
+  place-items: center;
+  min-height: 45px;
+  font: 400 clamp(26px, 3vw, 32px)/1.4 var(--font-body), 'Kohinoor Devanagari', 'Songti SC', 'Hiragino Mincho ProN', serif;
+
+  span {
+    grid-area: 1 / 1;
+    opacity: 0;
+    animation: greeting-cycle 16s ease-in-out infinite;
+  }
+
+  span:nth-child(2) { animation-delay: 4s; }
+  span:nth-child(3) { animation-delay: 8s; }
+  span:nth-child(4) { animation-delay: 12s; }
+}
+
+@keyframes greeting-cycle {
+  0% { opacity: 0; transform: translateY(6px); }
+  3%, 22% { opacity: 1; transform: translateY(0); }
+  25%, 100% { opacity: 0; transform: translateY(-6px); }
+}
+
+.portfolio__view--landing[aria-hidden='true'] .identity__greeting span { animation-play-state: paused; }
+
+@media (prefers-reduced-motion: reduce) {
+  .identity__greeting span { animation: none; }
+  .identity__greeting span:first-child { opacity: 1; }
+}
+
 @media (min-width: tokens.$breakpoint-mobile) {
   .lotus--left {
     bottom: -230px;
@@ -244,4 +274,30 @@
     top: 22.6%;
     right: 0;
   }
+}
+
+// Wide, shallow screens use the hanging ornaments as a side composition.
+@media (min-width: 600px) and (max-height: 600px) {
+  .portfolio__view--landing { overflow-y: auto; }
+
+  .landing__content {
+    padding: 32px 32px 32px clamp(188px, 24vw, 260px);
+  }
+
+  .identity {
+    grid-column: 1 / -1;
+    h1 { font-size: clamp(28px, 3.6vw, 36px); }
+    p { font-size: clamp(24px, 3.2vw, 32px); }
+  }
+
+  .hangings {
+    left: 24px;
+    width: 160px;
+    transform: none;
+  }
+
+  .hanging--left { left: 0; width: 40px; }
+  .hanging--right { right: 0; width: 40px; }
+  .lotus--left { left: -120px; top: auto; bottom: -120px; }
+  .lotus--right { top: auto; bottom: -100px; right: -100px; width: 220px; }
 }

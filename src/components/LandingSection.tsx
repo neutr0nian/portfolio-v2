@@ -26,9 +26,15 @@ export default function LandingSection({ rootRef, onDiscover, departing }: Landi
       </div>
       <div className="landing__content">
         <div className="identity">
-          <h1 id="landing-title" tabIndex={-1}>Hi, I’m Pratik Chavan</h1>
-          <p>I engineer beautiful interfaces</p>
-          <Button variant="outline" className="discover-button" onClick={onDiscover} disabled={departing} aria-controls="journey-view">
+          <div className="identity__greeting" aria-hidden="true">
+            <span lang="en">Hello</span>
+            <span lang="hi">नमस्ते</span>
+            <span lang="zh-Hans">你好</span>
+            <span lang="ja">こんにちは</span>
+          </div>
+          <h1 id="landing-title" tabIndex={-1} aria-label="Hello, I’m Pratik Chavan">I’m Pratik Chavan</h1>
+          <p>I design and engineer beautiful interfaces</p>
+          <Button variant="outline" className="discover-button" data-departing={departing} onClick={onDiscover} disabled={departing} aria-controls="journey-view">
             Experience
           </Button>
         </div>

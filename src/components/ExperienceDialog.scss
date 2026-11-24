@@ -1,0 +1,179 @@
+.experience-dialog {
+  position: fixed;
+  inset: 0;
+  width: min(880px, calc(100vw - 32px));
+  max-height: calc(100svh - 48px);
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  box-shadow: 0 24px 80px rgb(25 25 25 / 16%);
+
+  &[open] {
+    display: block;
+    animation: experience-arrive 240ms ease-out;
+  }
+
+  &::backdrop {
+    background: rgb(25 25 25 / 36%);
+    backdrop-filter: blur(5px);
+  }
+}
+
+.experience-dialog__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  max-height: calc(100svh - 50px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.experience-dialog__close.button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  min-width: 44px;
+  min-height: 44px;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+  border-radius: 50%;
+  background: var(--color-paper);
+  svg { width: 20px; height: 20px; }
+}
+
+.experience-dialog__art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 180px;
+  padding: 32px;
+  border-bottom: 1px solid var(--color-border);
+  .journey-motif { width: 176px; height: 176px; }
+}
+
+.experience-dialog__content { min-width: 0; padding: 28px; }
+
+.experience-dialog__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin: 0 0 20px;
+  font: 400 20px/1.2 var(--font-body);
+  color: var(--color-vermilion);
+  span { font-size: 16px; color: var(--color-text-muted); }
+}
+
+.experience-dialog h2 {
+  margin: 0;
+  font: 400 32px/1.1 var(--font-display);
+}
+
+.experience-dialog__role {
+  margin: 12px 0 28px;
+  font: 400 21px/1.25 var(--font-body);
+}
+
+.experience-dialog__description {
+  margin: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border);
+  font: 400 18px/1.55 var(--font-body);
+  color: var(--color-text-muted);
+}
+
+.experience-dialog__section {
+  margin-top: 28px;
+
+  h3 {
+    margin: 0 0 12px;
+    font: 400 22px/1.2 var(--font-display);
+  }
+
+  ul {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding-left: 20px;
+    font: 400 18px/1.5 var(--font-body);
+    color: var(--color-text-muted);
+  }
+
+  li { padding-left: 4px; }
+  li::marker { color: var(--color-vermilion); font-size: 12px; }
+}
+
+.experience-dialog__period {
+  margin: -4px 0 12px;
+  font: 400 16px/1.3 var(--font-body);
+  color: var(--color-text-muted);
+}
+
+.experience-dialog__credential {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 24px;
+  color: var(--color-text-muted);
+  font: 400 19px/1.3 var(--font-body);
+  text-underline-offset: 4px;
+  transition: color 200ms ease;
+
+  &:is(:hover, :focus-visible) { color: var(--color-vermilion); }
+  &:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 4px; }
+  svg { flex-shrink: 0; width: 18px; height: 18px; }
+}
+
+.experience-dialog__technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 28px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--color-border);
+  list-style: none;
+
+  li {
+    padding: 5px 10px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    font: 400 16px/1.2 var(--font-body);
+    color: var(--color-text-muted);
+  }
+}
+
+@media (min-width: 700px) {
+  .experience-dialog__layout { grid-template-columns: 200px minmax(0, 1fr); }
+  .experience-dialog__art {
+    align-items: flex-start;
+    padding: 48px 12px;
+    border-bottom: 0;
+    border-right: 1px solid var(--color-border);
+  }
+  .experience-dialog__content { padding: 64px 40px 48px; }
+}
+
+@media (max-height: 500px) and (max-width: 699px) {
+  .experience-dialog__art {
+    min-height: 0;
+    padding: 16px;
+    .journey-motif { width: 96px; height: 96px; }
+  }
+}
+
+@keyframes experience-arrive {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience-dialog[open] { animation: none; }
+}

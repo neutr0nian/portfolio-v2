@@ -63,7 +63,7 @@
 
 @media (min-width: tokens.$breakpoint-desktop) {
   .history-content {
-    padding-block: calc(var(--journey-corner-inset) + var(--journey-corner-size) * 0.65 - var(--font-size-history-entry) * var(--line-height-heading) / 2);
+    padding-block: calc(var(--journey-corner-inset) + var(--journey-corner-size) * 0.78);
   }
 
   .history-content__entry {

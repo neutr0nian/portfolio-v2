@@ -92,7 +92,7 @@ export default function App() {
       <InkCursor />
       <div className="portfolio__track" ref={trackRef}>
         <div className="portfolio__view portfolio__view--landing" inert={navigating || view !== 'landing'} aria-hidden={view !== 'landing'}>
-          <LandingSection rootRef={landingRef} onDiscover={() => navigate('journey', true)} departing={navigating} />
+          <LandingSection rootRef={landingRef} onDiscover={() => navigate('journey', true)} departing={navigating && view === 'landing'} />
         </div>
         <div className="portfolio__view portfolio__view--journey" id="journey-view" inert={navigating || view !== 'journey'} aria-hidden={view !== 'journey'}>
           <SceneNavigation back={{ label: 'Back', onClick: () => navigate('landing') }}

@@ -5,6 +5,9 @@
   z-index: 100;
   width: 12px;
   height: 12px;
+  margin: 0;
+  padding: 0;
+  border: 0;
   border-radius: 50%;
   background: var(--color-vermilion);
   box-shadow: 0 0 0 1px var(--color-paper);
@@ -14,7 +17,7 @@
 html[data-ink-cursor] {
   cursor: none;
 
-  .portfolio, .portfolio * { cursor: none; }
+  .portfolio, .portfolio *, dialog, dialog * { cursor: none; }
   .ink-cursor { display: block; }
 }
 

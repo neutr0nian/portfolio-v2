@@ -1,10 +1,12 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import './InkCursor.scss'
 
-const surfaces = '.work-scroll__paper, .button, .scene-navigation__link, .social-icon-button'
+const surfaces = '.work-scroll__paper, .button, .scene-navigation__link, .social-stamp-link, .experience-card'
 
 export default function InkCursor() {
   const ref = useRef<HTMLSpanElement>(null)
+  const [host, setHost] = useState<Element | null>(null)
 
   useEffect(() => {
     const dot = ref.current
@@ -40,6 +42,13 @@ export default function InkCursor() {
       }
       x = event.clientX
       y = event.clientY
+      const target = event.target instanceof Element ? event.target : null
+      const nextDialog = target?.closest('dialog') ?? null
+      // Render inside the modal so its top layer also contains the cursor.
+      if (nextDialog !== host) {
+        setHost(nextDialog)
+        return
+      }
       if (!root.dataset.inkCursor) {
         tailX = x
         tailY = y
@@ -49,7 +58,6 @@ export default function InkCursor() {
         previousTime = performance.now()
         frame = requestAnimationFrame(draw)
       }
-      const target = event.target instanceof Element ? event.target : null
       const next = target?.closest<HTMLElement>(surfaces) ?? null
       const enabled = next?.closest('[inert], :disabled, [aria-disabled="true"]') ? null : next
       if (enabled === surface) return
@@ -73,7 +81,7 @@ export default function InkCursor() {
     document.addEventListener('visibilitychange', clear, options)
     allowed.addEventListener('change', clear, options)
     return () => { events.abort(); clear() }
-  }, [])
+  }, [host])
 
-  return <span ref={ref} className="ink-cursor" aria-hidden="true" />
+  return createPortal(<span ref={ref} className="ink-cursor" aria-hidden="true" />, host ?? document.body)
 }
