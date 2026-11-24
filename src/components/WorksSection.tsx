@@ -22,7 +22,12 @@ export default function WorksSection({ works = workCategories }: { works?: Work[
       <div className="works-section__inner">
         <h2 id="works-title" tabIndex={-1}>The Art of Creating</h2>
         <div className="works-section__track" ref={trackRef} data-expanded={selected !== null}
-          onKeyDown={event => { if (event.key === 'Escape') setSelected(null) }}
+          onKeyDown={event => {
+            if (event.key !== 'Escape') return
+            event.preventDefault()
+            trackRef.current?.querySelector<HTMLButtonElement>('.work-scroll--expanded .work-scroll__toggle')?.focus({ preventScroll: true })
+            setSelected(null)
+          }}
           onTransitionEnd={event => { if (event.propertyName === 'flex-basis') revealSelected() }}>
           {works.map((work, index) => <WorkScroll key={work.id} work={work} index={index}
             expanded={selected === work.id}
